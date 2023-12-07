@@ -22,11 +22,11 @@
 </head>
     <body>
             <h1 class="text-center"><?php echo $dish['food_name'];?></h1>
-                <div class="row justify-content-center w-100">
-                    <div class="col-4">
-                    <a href="index.php?p=dish&id=<?php echo $dish['food_id'];?>" class="d-flex justify-content-center img-fluid"><img width="400" height="300" src="dish-images/<?php echo $dish['food_image']; ?>" alt=""></a>
+                <div class="row d-flex justify-content-center w-100">
+                    <div class="col-12 col-lg-4 order-lg-2">
+                        <a href="index.php?p=dish&id=<?php echo $dish['food_id'];?>" class="d-flex justify-content-center img-fluid"><img width="400" height="300" src="dish-images/<?php echo $dish['food_image']; ?>" alt=""></a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 order-lg-2">
                         <p class=""><?php echo $dish['food_description'];?></p>
                         <p class="">£<?php echo $dish['food_price'];?></p>
                         <div class="d-flex">
