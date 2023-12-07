@@ -1,14 +1,5 @@
 on: [push]
-
 jobs:
-  phpmd:
-      name: Linting
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v2
-        - name: Setup PHP environment
-          uses: shivammathur/setup-php@v2
   deploy_job:
     runs-on: ubuntu-latest
     name: deploy
@@ -17,14 +8,16 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Deps
         run: yarn; npm install -g sass
+      - name: Install php deps
+        run: composer install
       - name: Compile Css
-        run: sass scss/main.scss css/styles.css
+        run: mkdir css; sass scss/main.scss css/styles.css
       - name: Deploy app
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: ${{ secrets.FTP_USERNAME }}
           server: ${{ secrets.FTP_SERVER }}
           local_path: './*'
-          remote_path: '/httpdocs'
+          remote_path: '/httpdocs/Website-Assignment'
           sftp_only: true
           password: ${{ secrets.FTP_PASSWORD }}
