@@ -9,9 +9,6 @@
         public function isFavourite($food_id){
             $query = "SELECT * FROM user_favourites WHERE user_id = :user_id AND food_id = :food_id";
             $stmt = $this->db->prepare($query);
-            if (!isset($_SESSION['user_data']['user_id'])){
-                echo 'not set';
-            }
             $stmt->execute([
                 "user_id" => $_SESSION['user_data']['user_id'],
                 "food_id" => $food_id

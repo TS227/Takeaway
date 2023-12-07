@@ -43,11 +43,11 @@
                             $isFav = $Favourite->isFavourite($_GET['id']);
                             if ($isFav){
                                 ?>
-                                <button id="removeFav" type="button" class="btn btn-danger" data-foodid="<?php echo $_GET['id'];?> ">Remove from favourites</button>
+                                    <button id="removeFav" type="button" class="btn btn-danger" data-foodid="<?php echo $_GET['id'];?> ">Remove from favourites</button>
                                 <?php
                             }else{
                                 ?>
-                                <button id="addFav" type="button" class="btn btn-success" data-foodid="<?php echo $_GET['id'];?> ">Add to favourites</button>
+                                    <button id="addFav" type="button" class="btn btn-success" data-foodid="<?php echo $_GET['id'];?> ">Add to favourites</button>
                                 <?php
                             }
                             ?>
@@ -58,3 +58,4 @@
             </div>
     </body>
 </html>
+
