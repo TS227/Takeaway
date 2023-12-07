@@ -1,5 +1,14 @@
 on: [push]
+
 jobs:
+  phpmd:
+      name: Linting
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: Setup PHP environment
+          uses: shivammathur/setup-php@v2
   deploy_job:
     runs-on: ubuntu-latest
     name: deploy
@@ -9,7 +18,7 @@ jobs:
       - name: Install Deps
         run: yarn; npm install -g sass
       - name: Compile Css
-        run: mkdir css; sass scss/main.scss css/styles.css
+        run: sass scss/main.scss css/styles.css
       - name: Deploy app
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
