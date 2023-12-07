@@ -1,0 +1,39 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add …
+
+PATH: 
+  /usr/local/opt/libpq/bin:/usr/local/opt/libpq/bin:/usr/local/opt/libpq/bin:/usr/local/opt/libpq/bin:/Users/thomasstokes/.rbenv/shims:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/usr/local/opt/libpq/bin:/Users/thomasstokes/.rbenv/shims
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.18.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  TypeError [ERR_UNESCAPED_CHARACTERS]: https://registry.yarnpkg.com/…: Request path contains unescaped characters
+      at new NodeError (node:internal/errors:405:5)
+      at new ClientRequest (node:_http_client:183:13)
+      at Object.request (node:https:358:10)
+      at module.exports.Request.start (/usr/local/lib/node_modules/yarn/lib/cli.js:141452:32)
+      at module.exports.Request.end (/usr/local/lib/node_modules/yarn/lib/cli.js:142211:10)
+      at end (/usr/local/lib/node_modules/yarn/lib/cli.js:141265:14)
+      at Immediate.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141279:7)
+      at process.processImmediate (node:internal/timers:476:21)
+
+npm manifest: 
+  {
+    "name": "Website",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

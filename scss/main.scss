@@ -1,0 +1,27 @@
+@import "abstracts/variables";
+@import "venders/_bootstrap.scss";
+
+body{
+  font-family: 'Inter', sans-serif;
+  background-color: $jet;
+  color: white;
+}
+nav{
+  background-color: $green;
+}
+
+footer{
+  background-color: $mag;
+  width: 100%;
+  color: #000;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+btn-success{
+  background-color: $green;
+  border-color: $green;
+}
+
+//sass main.scss ../css/styles.css
