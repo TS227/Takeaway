@@ -20,7 +20,7 @@
 </head>
 <body class="h-100">
     <div class="m-3">
-        <h1 class="text-center">Menu</h1>
+        <h1 class="display-4">Menu</h1>
         <div class="mb-4 pb-2 d-flex justify-content-center">
             <div class="row">
             <?php foreach($categories as $cat){ ?>

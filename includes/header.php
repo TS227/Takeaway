@@ -40,8 +40,4 @@
           ?>
        </div>
       </div>
-      <form action="search.html" class="d-flex">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success ms-2" type="submit">Search</button>
-      </form>
 </nav>

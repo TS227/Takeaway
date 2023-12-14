@@ -5763,10 +5763,7 @@ nav {
 footer {
   background-color: #F3EFF5;
   width: 100%;
-  color: #000;
-  position: fixed;
-  left: 0;
-  bottom: 0; }
+  color: #000; }
 
 btn-success {
   background-color: #366744;

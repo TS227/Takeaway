@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<footer class="footer mt-auto py-3 bg-light">
+<footer class="mt-auto py-3 bg-light">
     <div class="container w-100">
         <p>© 2019 - Todos os direitos reservados</p>
     </div>

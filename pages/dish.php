@@ -33,7 +33,7 @@
                             <?php if ($dish['food_spice'] > 0) {
                             echo '<p class="me-2">Spice level:</p>';
                             for ($i = 0; $i < $dish['food_spice']; $i++) {
-                                echo '<i class="fa-solid fa-pepper-hot"></i>';
+                                echo '<i class="fa-solid fa-pepper-hot" style="color: #e01024;"></i>';
                                 }}?> 
                         </div>
                         <div>
