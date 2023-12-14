@@ -18,7 +18,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="m-3">
+    <div class="mx-auto">
         <h1 class="text-center">Dishes</h1>
         <div class="mb-4 pb-2 d-flex justify-content-center">
             <div class="row">

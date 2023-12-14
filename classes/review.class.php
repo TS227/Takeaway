@@ -5,6 +5,14 @@
       $this->db = $db;
     }
 
+    public function getAllReviews(){
+      $query = "SELECT * FROM reviews";
+      $stmt = $this->db->prepare($query);
+      $stmt->execute();
+      $reviews = $stmt->fetchAll();
+      return $reviews;
+    }
+
     public function createReview($review_data){
       $query = "INSERT INTO reviews (user_id, review_rating , review_comment) VALUES (:user_id, :review_rating, :review_comment)";
       $stmt = $this->db->prepare($query);

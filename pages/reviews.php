@@ -1,4 +1,6 @@
 <?php
+$Review = new Review($db);
+
 if($_POST['review']) {
   $Review = new Review($db);
   $Review->createReview([
@@ -6,13 +8,26 @@ if($_POST['review']) {
   "review_comment" => $_POST['comment']
   ]);
   }
+  $reviews = $Review->getAllReviews();
 ?>
 
 
 <div class="container my-4">
     <div class="jumbotron">
         <h1 class="display-4">Reviews</h1>
-        <h1 class="display-2">Leave a review!</h1>
+        <?php foreach($reviews as $review){ ?>
+                <div style="width: 30rem;" class="bg-dark m-3 p-2">
+                  <div class="d-flex">
+                  <?php if ($review['review_rating'] > 0) {
+                            for ($i = 0; $i < $review['review_rating']; $i++) {
+                                echo '<i class="fa-solid fa-star" style="color: #eeff00;"></i>';
+                                }}?> 
+                  </div>
+                  <p class=""><?php echo $review['review_comment']; ?></p>
+                </div>
+
+            <?php } ?>
+        <h4 class="">Leave a review!</h4>
         <?php
           if(!$_SESSION['is_logged_in']){
             ?>

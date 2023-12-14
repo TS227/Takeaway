@@ -19,21 +19,16 @@
     <title>Document</title>
 </head>
 <body class="h-100">
-    <div class="m-3">
-        <h1 class="display-4">Menu</h1>
-        <div class="mb-4 pb-2 d-flex justify-content-center">
-            <div class="row">
-            <?php foreach($categories as $cat){ ?>
-                <div style="width: 30rem;" class="card bg-dark m-3 p-2">
-                    <a href="index.php?p=dishes&id=<?php echo $cat['category_id'];?>" class="d-flex justify-content-center img-fluid"><img width="400" height="300" src="category-images/<?php echo $cat['category_image']; ?>" alt=""></a>
-                    <div class="card-body">
-                        <h2 class="card-title text-center"><?php echo $cat['category_name']; ?></h5>
-                    </div>
-                </div>
-            <?php } ?>
-
-            </div>
-        </div>
+  <h1 class="display-4">Menu</h1>
+  <div class="row d-flex justify-content-center">
+  <?php foreach($categories as $cat){ ?>
+    <div style="width: 30rem;" class="card bg-dark m-3 p-2">
+    <a href="index.php?p=dishes&id=<?php echo $cat['category_id'];?>" class="d-flex justify-content-center img-fluid"><img width="400" height="300" src="category-images/<?php echo $cat['category_image']; ?>" alt=""></a>
+      <div class="card-body">
+        <h2 class="card-title text-center"><?php echo $cat['category_name']; ?></h5>
+      </div>
     </div>
+  <?php } ?>
+  </div>
 </body>
 </html>
