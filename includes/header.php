@@ -26,6 +26,7 @@
          <a class="nav-item nav-link active" href="index.php?p=home">Home</a>
          <a class="nav-item nav-link active" href="index.php?p=menu">Menu</a>
          <a class="nav-item nav-link active" href="index.php?p=about">About us</a>
+         <a class="nav-item nav-link active" href="index.php?p=reviews">Reviews</a>
          <?php if (isset($_SESSION['is_logged_in'])){
               ?>
               <a class="nav-item nav-link active" href="index.php?p=logout">Logout</a>
