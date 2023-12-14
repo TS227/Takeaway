@@ -20,7 +20,7 @@
 
         <!-- Image Section -->
         <div class="text-center">
-            <img src="images/storepic.jpeg" alt="The Green Chilli Interior" class="img-fluid">
+            <img src="images/storepic.png" alt="The Green Chilli Interior" class="img-fluid">
             <p class="lead">Experience the inviting ambiance at The Green Chilli</p>
         </div>
 
