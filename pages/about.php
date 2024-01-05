@@ -1,13 +1,27 @@
+<script>
+        // Initialize the map
+        function initMap() {
+            // Set the coordinates for the marker
+            var markerPosition = { lat: 51.7110393, lng: 0.4680129 };
+
+            // Create a new map centered at the marker position
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: markerPosition,
+                zoom: 18
+            });
+
+            // Create a marker and set its position on the map
+            var marker = new google.maps.Marker({
+                position: markerPosition,
+                map: map,
+                title: 'Marker Title'
+            });
+        }
+</script>
 <!DOCTYPE html>  
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOmcTErjNS9cJ264VBNiHr6OBNy5p2jX4&callback=initMap"></script>
   </head>
 <body>
   <div class="container my-4">
@@ -27,6 +41,8 @@
 
         <p>Our commitment extends beyond the kitchen. We strive to create a warm and welcoming atmosphere for our guests. Whether you choose to dine in, order for takeout, or enjoy our catering services, your satisfaction is our top priority.</p>
         <p>Thank you for choosing The Green Chilli. We look forward to serving you an unforgettable dining experience filled with the richness and authenticity of Indian cuisine.</p>
+        <h3>Where to find us!</h3>
+        <div class="text-center w-100 h-50" id="map"></div>
     </div>
   </div>
 </body>
