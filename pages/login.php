@@ -114,6 +114,7 @@
             <button type="submit" name="login" value="1" class="btn btn-primary">Submit</button>
         </form>
     </div>
+    <h1 class="text-center">Register</h1>
     <div class="col-md-6 mx-auto">
         <form id="register-form" method="post" action="">
             <div class="form-group">
