@@ -22,12 +22,14 @@ $dish = $dish->getDish($dish_id);
 </head>
 
 <body>
-  <h1 class="text-center"><?php htmlspecialchars(string: $dish['food_name'], flags: ENT_QUOTES, encoding: 'UTF-8'); ?>
+  <h1 class="text-center">
+    <?php echo htmlspecialchars(string: $dish['food_name'], flags: ENT_QUOTES, encoding: 'UTF-8'); ?>
   </h1>
   <div class="row d-flex justify-content-center w-100">
     <div class="col-12 col-lg-4 order-lg-2">
-      <a href="index.php?p=dish&id=<?php echo $dish['food_id']; ?>" class="d-flex justify-content-center img-fluid"><img
-          width="400" height="300" src="dish-images/<?php echo $dish['food_image']; ?>" alt=""></a>
+      <a href="index.php?p=dish&id=<?php echo htmlspecialchars(string: $dish['food_id'], flags: ENT_QUOTES, encoding: 'UTF-8'); ?>"
+        class="d-flex justify-content-center img-fluid"><img width="400" height="300"
+          src="dish-images/<?php echo $dish['food_image']; ?>" alt=""></a>
     </div>
     <div class="col-12 col-lg-4 order-lg-2">
       <p class=""><?php echo $dish['food_description']; ?></p>
