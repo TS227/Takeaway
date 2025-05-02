@@ -7,7 +7,7 @@
   resolved "https://registry.yarnpkg.com/5/-/5-0.0.1.tgz#8a4a56ba3cf511ae117a9d0f95cfcef8e100a31c"
   integrity sha512-MSAD9VKb1ac1HonDQmlHiew99tq9Boj/y3NsK1sqixk+C7JKS3i4DAnVUvYMhO6RpGMAo2QHoI3cxL1mlKH8qw==
 
-bootstrap@5.2.3:
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.2.3.tgz#54739f4414de121b9785c5da3c87b37ff008322b"
-  integrity sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==
+bootstrap@5.3.5:
+  version "5.3.5"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.5.tgz#be42cfe0d580e97ee1abb7d38ce94f5c393c9bb6"
+  integrity sha512-ct1CHKtiobRimyGzmsSldEtM03E8fcEX4Tb3dGXz1V8faRwM50+vfHwTzOxB3IlKO7m+9vTH3s/3C6T2EAPeTA==
